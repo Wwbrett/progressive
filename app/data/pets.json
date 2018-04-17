@@ -1,0 +1,27 @@
+{
+  "slideshow":
+    [
+      { "pet": "Casper", "filename": "Casper-178870793"},
+      { "pet": "Chip", "filename": "Chip-519252509"},
+      { "pet": "Nugget", "filename": "Nugget-499158128"}
+  ],
+
+  "Initial_Tour":
+  [
+    {"name": "Start", "location":"C001", "category": "GCU Tour", "description": "This is the start of the tour, once you see this then you are ready to go", "filename": ""},
+    {"name": "C001 Lecture Hall", "location": "Charles Oakley Building", "category": "Important Areas", "description": "A large lecture hall where some classes will take place", "filename": ""},
+    {"name": "Charles Oakley Building", "location":"Charles Oakley Building", "category": "Main Buildings", "description": "One of the main buildings on the GCU campus, mainly used by those studying science", "filename": ""},
+    {"name": "George Moore Building", "location":"George Moore Building", "category": "Main Buildings", "description": "One of the main buildings on the GCU campus, it contains the Saltire centre and the library. Most students will spend some time in this building", "filename": ""},
+    {"name": "Saltire Centre", "location":"George Moore Building", "category": "Important Areas", "description": "A large open space used by students to do independent learning as well as meeting people", "filename": "Saltire-122496743"},
+    {"name": "Library", "location": "George Moore Building", "category": "Important Areas", "description": "The library contains a large amount of relavent books as well as areas with computers that students are free to use", "filename": "Library-456923714"},
+    {"name": "Using Computers", "location":"Library", "category": "Online Activities", "description": "Your first task is to use the credentials that you were given to log into this computer, if you need assistance ask one of the advisors nearby", "filename": ""},
+    {"name": "Students Association Building", "location":"Student Association Building", "category": "Main Buildings", "description": "The students association building contains resources for students to utilise", "filename": ""},
+    {"name": "24 Hour Lab", "location":"Student Association Building", "category": "important Areas", "description": "The 24 hour lab is open at all hours of the day for students to come in and use whenever then wish", "filename": ""},
+    {"name": "Email", "location":"24 Hour Lab", "category": "Online Activities", "description": "Your Second task is to log into a computer and send an email to your induction leader at this address: email@gcu.ac.uk. If you need assistance ask one of the advisors nearby", "filename": ""},
+    {"name": "M137 Lab", "location":"George Moore Building", "category": "Labs and Classrooms", "description": "This is a typical lab in GCU, they are normally used for classes but if they are not in use then students may freely use them unless otherwise stated", "filename": ""},
+    {"name": "GCULearn", "location": "M137 Lab", "category": "Online Activities", "description": "Your final task is to log in again and go to the GCULearn website: http://blackboard.gcal.ac.uk/, take a few minutes to explore the site, paying attention to the modules you're assigned to ", "filename": ""},
+    {"name": "Hamish Wood Building", "location":"Hamish Wood Building", "category": "Main Buildings", "description": "One of the main buildings on the GCU campus, the Hamish Wood Building contains lecture halls and classrooms that can be used by anyone", "filename": ""},
+    {"name": "W110 Lecture Hall", "location":"Hamish Wood Building", "category": "Important Areas", "description": "This is another lecture hall, slightly smaller than C001 but the purpose is the same, this is the final location and if you've madeit here you have finished the initial tour", "filename": ""},
+    {"name": "Completed", "location":"W110", "category": "GCU Tour", "description": "This is the end of the tour, once you see this then you are finished and should await instructions from your induction leader", "filename": ""}
+  ]
+}
