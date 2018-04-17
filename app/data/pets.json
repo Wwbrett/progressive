@@ -1,9 +1,9 @@
 {
   "slideshow":
     [
-      { "pet": "Casper", "filename": "Casper-178870793"},
-      { "pet": "Chip", "filename": "Chip-519252509"},
-      { "pet": "Nugget", "filename": "Nugget-499158128"}
+      { "pet": "1", "filename": "Casper-178870793"},
+      { "pet": "2", "filename": "Chip-519252509"},
+      { "pet": "3", "filename": "Nugget-499158128"}
   ],
 
   "Initial_Tour":
