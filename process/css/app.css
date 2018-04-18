@@ -95,7 +95,10 @@ and (max-width: 768px) {
 /**  nav inbody **/
 
 header .inbody {
-  background: rgba(71, 90, 97,.8);
+  background: #1B7998;
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.5);
+  box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.5);
 }
 
 header .navbar.inbody {
@@ -127,7 +130,7 @@ header .inbody .navbar-brand span.subhead {
 /**  Carousel Fade **/
 
 .carousel {
-  height: 100vh;
+  height: 25vh;
   background-color: #1B7998;
 }
 

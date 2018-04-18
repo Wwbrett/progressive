@@ -1,11 +1,13 @@
-// Sets up variables for use
+/** Sets up variables for use */
 var $ = jQuery = require('jquery');
 require('./bootstrap_custom.js');
 var Handlebars = require('handlebars');
+
 // Function to run when the page is ready
 $(function() {
-  var topOffset = 50;
-  /** if the browser can handle service workers then register the service worker */
+  var topOffset = 50;  // offset to take into account the navigation bar being stickied to the top of the page
+
+  /** if the browser can handle them then register a new service worker */
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker
       .register('./service-worker.js')
@@ -21,9 +23,7 @@ $(function() {
     });
   }
 
-  /**
-  Parse JSON data from location and use Mustache templating to dynamically load into sections of index.html
-  */
+  /** Parse JSON data from location and use the Mustache templating system to dynamically load into sections of index.html */
   $.getJSON('/data/pets.json', function(data) {
     /** gets the location of slideshow template in html file and compiles template using provided JSON */
     var slideshowTemplate = $('#slideshow-template').html();
@@ -54,7 +54,7 @@ $(function() {
       $(this).remove();
     });
 
-    /** Activate carousel and remove pausing when mouse is hovering it */
+    /** Remove pausing when mouse is hovering the carousel */
     $('.carousel').carousel({
       pause: false
     });
@@ -77,11 +77,11 @@ $(function() {
 
   /**
   Generates modals when an image is clicked, this is to reduce load times
-    petname: The name of the pet
-    petbreed: The breed of dog/ species of animal
-    petowner: Name of the pet's owner
-    petinfo: a short description of the pet
-    petimage: A .jpg image of the pet
+    petname: The name of the tour step
+    petbreed: The location of the tour step
+    petowner: Category that the tour step falls under
+    petinfo: a short description of tour step
+    petimage: A .jpg image of the location/ a slide to help with what to do
    */
   $(document).on('click', '.openpetmodal', function() {
     $('.modal-petname').html($(this).data('petname'));
@@ -92,7 +92,7 @@ $(function() {
     $('.modal-petimage').attr('alt', $(this).data('petname') + ' Photo');
   });
 
-  /** When a task is compete and the complete button is clicked send a push notification letting the user know that they should continue */
+  /** When a task is compete and the complete button is clicked send a push notification letting the user know that they should continue. If they have not allowed notifications then it will not send. There is no way around this */
   $('.btnCustom').click(function() {
     console.log("Task Completed");
     if (Notification.permission === 'granted') {
@@ -102,7 +102,7 @@ $(function() {
         body: "You have completed one of the tasks you were assigned\nOpen the site to view your next task",
         icon: "images/icons/icon-256x256.png",
         badge: "images/icons/icon-128x128.png",
-        vibrate: [500,110,500,110,450,110,200,110,170,40,450,110,200,110,170,40,500]
+        vibrate: [500,110,500,110,450,110,200,110,170,40,450,110,200,110,170,40,500]  //Star Wars vibration pattern
       }
       navigator.serviceWorker.getRegistration()
         .then(function(reg) {
@@ -111,16 +111,6 @@ $(function() {
         });
     }
   });
-
-  // /** Checks if the user has given notification permission and then sends a test notification to them */
-  // if (Notification.permission === 'granted') {
-  //   console.log("Showing notification...");
-  //   navigator.serviceWorker.getRegistration()
-  //     .then(function(reg) {
-  //       reg.showNotification("Welcome to your induction");
-  //       console.log("...done");
-  //     });
-  // }
 
   /** Runs scrollspy in the body of the page and changes  .navbar accordingly */
   $('body').scrollspy({

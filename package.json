@@ -1,15 +1,15 @@
 {
   "name": "progressive",
   "version": "1.0.0",
-  "description": "Project for my Progressive Web App",
+  "description": "Progressive Web App",
   "scripts": {
     "start": "node ./index.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/planetoftheweb/progressive.git"
+    "url": "https://github.com/Wwbrett/progressive.git"
   },
-  "author": "William Brett",
+  "author": "William Brett S1433435",
   "devDependencies": {
     "browserify": "^13.1.0",
     "gulp": "^3.8.8",

@@ -33,10 +33,10 @@
         <div class="navbar-header">
           <img src="/images/icons/icon-reload.svg" alt="Reload Button" class="reload reloadbtn-lg">
           <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target='#collapse'>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
           <a class="navbar-brand" href="#slideshow">
             <h1>Wisdom<span class="subhead">Pet Medicine</span></h1>
           </a>
@@ -61,9 +61,9 @@
       <div class="carousel fade" data-ride="carousel" id="slideshow">
         <div class="carousel inner">
           {{#each slideshow}} {{#if @first}}
-          <div class="item active"><img src="images/pets/{{filename}}.jpg" alt="{{pet}} Photo"></div>
+          <div class="item active"><img src="images/pets/{{filename}}.jpg" alt="{{name}} Photo"></div>
           {{else}}
-          <div class="item"><img src="images/pets/{{filename}}.jpg" alt="{{pet}} Photo"></div>
+          <div class="item"><img src="images/pets/{{filename}}.jpg" alt="{{name}} Photo"></div>
           {{/if}} {{/each}}
         </div>
         <!--carousel inner-->
